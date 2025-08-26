@@ -1,2 +1,4 @@
 # MobileSoftwareDevelopmentLab
-这个《移动软件开发》这门课的实验代码与报告
+这个是《移动软件开发》这门课的实验代码与报告
+
+第一个实验使用的是gitee，没看到可以使用github，感觉github更好用，所以以后都用github的这个仓库了，第一个实验也会传过来的
