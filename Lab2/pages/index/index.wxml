@@ -1,0 +1,38 @@
+<view class="container">
+  <!-- picker 选择地区 -->
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+    <view class="picker">
+      当前选择：{{region[0]}} {{region[1]}} {{region[2]}}
+    </view>
+  </picker>
+
+  <!-- 天气信息显示 -->
+  <text class="weather-text">
+    {{city}} 当前温度：{{temperature}}℃，天气：{{weather}}
+  </text>
+
+  <image class="weather-icon" src="{{weatherIcon}}" mode="aspectFit"></image>
+
+  <view class="detail">
+    <view class="bar">
+      <view class="box">湿度：{{humidity}}%</view>
+      <view class="box">气压：{{pressure}} hPa</view>
+      <view class="box">风向：{{windDirection}}</view>
+    </view>
+    <view class="bar">
+      <view class="box">能见度：{{visibility}} km</view>
+      <view class="box">风速：{{windSpeed}} m/s</view>
+
+    </view>
+    <view class="bar">
+      <view class="box">空气质量：{{category}}</view>
+      <view class="box">紫外线：{{uvIndex}}</view>
+    </view>
+    <view class="bar">
+      <view class="box">日出时间：{{sunrise}}</view>
+    </view>
+    <view class="bar">
+      <view class="box">日落时间：{{sunset}}</view>
+    </view>
+  </view>
+</view>
